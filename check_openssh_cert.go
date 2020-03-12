@@ -84,7 +84,7 @@ func main() {
 	url := *urlFlag
 
 	if version {
-		fmt.Println("goahead client version 0.0.1 Build time:", buildtime, "UTC")
+		fmt.Println("check_openssh_cert version 0.0.1 Build time:", buildtime, "UTC")
 		os.Exit(0)
 	}
 
