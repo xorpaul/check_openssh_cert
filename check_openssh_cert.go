@@ -74,7 +74,7 @@ func main() {
 	var (
 		urlFlag                      = flag.String("url", "https://127.0.0.1/check", "which URL to send the GET to to get the certificate")
 		versionFlag                  = flag.Bool("version", false, "show build time and version number")
-		verifyAgainstSignatureShaSum = flag.String("verifyAgainstSignatureShaSum", "", "file location to check the recieved certificat's signature against")
+		verifyAgainstSignatureShaSum = flag.String("verifyAgainstSignatureShaSum", "", "sha256 sum of the received certificate's fingerprint")
 	)
 	flag.BoolVar(&debug, "debug", false, "log debug output, defaults to false")
 	flag.BoolVar(&sslSkipVerify, "sslSkipVerify", false, "add InsecureSkipVerify: true to the http client for invalid certificates")
