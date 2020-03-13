@@ -3,12 +3,16 @@
 Usage of ./check_openssh_cert:
   -debug
     	log debug output, defaults to false
+  -jsonKey string
+    	JSON key which contains the Authorized Key (default "certificate")
+  -receivedCertficiateIsCA
+    	the certificate received from the url is a CA, if this is false then a end certificate is expected
   -sslSkipVerify
     	add InsecureSkipVerify: true to the http client for invalid certificates
   -url string
     	which URL to send the GET to to get the certificate (default "https://127.0.0.1:443/check")
   -verifyAgainstSignatureShaSum string
-    	file location to check the recieved certificat's signature against
+    	sha256 sum of the received certificate's fingerprint
   -version
     	show build time and version number
 ```
